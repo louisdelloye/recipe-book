@@ -1,0 +1,114 @@
+% \usepackage{cite}
+\usepackage{amsfonts,amsmath,amsthm,amssymb}
+% \usepackage{thm-restate}
+% \usepackage{thmtools}
+% \usepackage{mdframed}
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage{indentfirst}
+\usepackage{lipsum}
+\usepackage{tabto}
+\usepackage[hyphens]{url}
+\usepackage{csquotes}
+
+% \usepackage{adjustbox}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{pgfplots}
+\usepackage{pdfpages}
+
+\usetikzlibrary{shapes.geometric}
+
+\usepackage{paracol}
+\columnratio{0.65}
+% \setlength{\columnsep}{1.0em}
+
+%% FONTS
+\usepackage[T1]{fontenc}
+\usepackage{FiraSans}
+\usepackage{CJKutf8}
+
+\usepackage[labelfont=bf]{caption}
+\usepackage{subcaption}
+\newcommand{\mycaption}[2]{\caption[#1]{\textbf{#1} #2}}
+\usepackage[skip=5pt]{caption}
+% \captionsetup[subfigure]{skip=-5pt} % Adjust this value as needed
+
+
+
+
+%% %%%%%%%%%%%%%%%%%%%%%%%% COLORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Lblue}{HTML}{B8CDFF}
+\definecolor{Dblue}{HTML}{4a65a8}
+\definecolor{Lgrey}{HTML}{919699}
+\definecolor{Dgrey}{HTML}{54544e}
+\definecolor{myorange}{HTML}{FEAE00}
+\definecolor{LB}{HTML}{1F96FF}
+\definecolor{coral}{HTML}{F7736E}
+
+
+%% %%%%%%%%%%%%%%%%%%%%%%%% ALGO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[boxruled,linesnumbered, noend]{algorithm2e}
+\usepackage{bm}
+\setlength\algomargin{2em}  % Adjust this value to increase the margin
+% \usepackage{placeins}
+
+%% %%%%%%%%%%%%%%%%%%%%%%%% MARGINS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \usepackage[twoside, inner=3.65cm, outer=2.65cm, top=2.65cm, bottom=2.65cm]{geometry} % (for two-sided look) % ! TODO SWITCH for print
+\usepackage[margin=3.45cm]{geometry} % (for one-sided look) % ! TODO SWITCH for print
+
+
+%% %%%%%%%%%%%%%%%%%%%%%%%% FONT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{sectsty}  % Make sure this line is uncommented
+\allsectionsfont{\sffamily}  % Add this line
+% make the chapter title Dblue with sectsty
+\sectionfont{\color{Dblue}\sffamily}
+\subsubsectionfont{\color{Dgrey}\sffamily}
+
+
+
+%% %%%%%%%%%%%%%%%%%%%%%%%% TOC & MINITOC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \setcounter{secnumdepth}{4}
+% \setcounter{tocdepth}{4}
+
+% \usepackage[tight, k-tight]{minitoc}
+% remove the minitoc horizontal line like with \noptcrule 
+% \noccrule
+\usepackage{setspace}
+
+
+
+%% %%%%%%%%%%%%%%%%%%%%%%%% HYPER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[pdftex, pdftitle={Article}, pdfauthor={Author}]{hyperref}
+% \bibliographystyle{unsrt}
+\hypersetup{
+  colorlinks = true,
+  linkcolor = {Dblue},
+  urlcolor = {Dblue},
+  citecolor = {LB}
+}
+  
+\addto\extrasenglish{
+  \def\sectionautorefname{Section}
+  \def\chapterautorefname{Chapter}
+  \def\subsectionautorefname{Subsection}
+  \def\subsubsectionautorefname{Subsubsection}
+  \def\algorithmautorefname{Algorithm}
+}
+
+% \renewcommand{\thesubsection}{\arabic{subsection}}
+\setcounter{secnumdepth}{0}
+  
+\usepackage{silence}
+% \WarningFilter{minitoc(hints)}{W0030, W0023, W0028, W0024}
+  
+    
+%% %%%%%%%%%%%%%%%%%%%%%%%% COMMANDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \todo[inline]{Make cust function for gls}
